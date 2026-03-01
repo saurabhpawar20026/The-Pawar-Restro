@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pawar Cafe | Royal Antique Destination</title>
+    <style>
+        :root { --gold: #c5a059; --dark: #1a1a1a; --cream: #fffdf5; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Georgia', serif; }
+        body { background-color: var(--cream); color: #3e2723; }
+
+        /* Antique Navigation */
+        nav { background: var(--dark); padding: 20px 10%; display: flex; justify-content: space-between; border-bottom: 3px solid var(--gold); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 24px; color: var(--gold); font-weight: bold; letter-spacing: 3px; text-transform: uppercase; }
+
+        /* Royal Hero Section */
+        .hero { height: 80vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: var(--gold); border-bottom: 8px double var(--gold); }
+        .hero h1 { font-size: 4rem; margin-bottom: 10px; }
+        .hero p { color: white; font-style: italic; font-size: 1.2rem; max-width: 800px; }
+
+        /* Stats Section */
+        .section { padding: 60px 10%; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+        .card { background: white; padding: 30px; border: 1px solid var(--gold); box-shadow: 8px 8px 0px var(--gold); transition: 0.3s; }
+        .card:hover { transform: scale(1.05); background: var(--dark); color: var(--gold); }
+
+        /* Antique Menu */
+        .menu-box { background: var(--dark); color: var(--gold); padding: 50px 10%; border-top: 5px solid var(--gold); }
+        .menu-item { display: flex; justify-content: space-between; margin-bottom: 15px; border-bottom: 1px dashed rgba(197,160,89,0.4); padding-bottom: 5px; font-size: 1.2rem; }
+
+        /* Zomato Banner */
+        .zomato { background: #cb202d; color: white; padding: 40px; margin: 40px 10%; text-align: center; border-radius: 4px; }
+        .zomato a { background: white; color: #cb202d; padding: 10px 25px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 15px; border-radius: 5px; }
+
+        footer { background: #000; color: var(--gold); padding: 30px; text-align: center; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+    <nav><div class="logo">The Pawar Cafe</div></nav>
+    <section class="hero">
+        <h1>THE PAWAR CAFE</h1>
+        <p>A Heritage Experience with 3 Floors, 150 Luxury Rooms & Authentic Desi Dhaba Flavors.</p>
+    </section>
+    <section class="section">
+        <h2>Royal Infrastructure</h2>
+        <div class="grid">
+            <div class="card"><h3>150 Rooms</h3><p>50 chambers on each of the 3 majestic floors.</p></div>
+            <div class="card"><h3>Dual Reception</h3><p>Two grand wings for a royal check-in experience.</p></div>
+            <div class="card"><h3>Ground Restro</h3><p>Traditional seating area for a soulful dining experience.</p></div>
+        </div>
+    </section>
+    <section class="menu-box">
+        <h2 style="text-align: center; margin-bottom: 30px;">Desi Dhaba Specialties</h2>
+        <div class="grid">
+            <div>
+                <div class="menu-item"><span>Dal Tadka Ghee</span><span>₹195</span></div>
+                <div class="menu-item"><span>Paneer Khas</span><span>₹310</span></div>
+                <div class="menu-item"><span>Handi Chicken</span><span>₹390</span></div>
+            </div>
+            <div>
+                <div class="menu-item"><span>Patiala Lassi</span><span>₹110</span></div>
+                <div class="menu-item"><span>Kulhad Chai</span><span>₹50</span></div>
+                <div class="menu-item"><span>10 Special Drinks</span><span>MENU</span></div>
+            </div>
+        </div>
+    </section>
+    <div class="zomato">
+        <h2>Order Online via Zomato</h2>
+        <p>Royal taste delivered to your doorstep.</p>
+        <a href="https://zomato.com">ORDER NOW</a>
+    </div>
+    <footer>THE PAWAR CAFE &copy; 2026 | BUILT FOR THE ROYALS</footer>
+</body>
+</html>
